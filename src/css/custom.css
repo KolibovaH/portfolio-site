@@ -1,30 +1,186 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Custom CSS for your portfolio
+ * Color scheme: dark teal / soft text, neon green code
  */
 
-/* You can override the default Infima variables here. */
+/* ============================= */
+/* 1. Global variables & theme   */
+/* ============================= */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #A3AB78;       /* links/buttons accent */
+  --ifm-color-primary-dark: #98A270;
+  --ifm-color-primary-darker: #8D9667;
+  --ifm-color-primary-darkest: #828C5E;
+  --ifm-color-primary-light: #B0B982;
+  --ifm-color-primary-lighter: #BDC48D;
+  --ifm-color-primary-lightest: #C9D198;
+
+  --ifm-background-color: #2D3E40;    /* main page background */
+  --ifm-color-content: #E4F2E7;       /* body text color */
+
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-monospace: 'Fira Code', monospace;
+
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode adjustments */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #A3AB78;
+  --ifm-background-color: #2D3E40;
+  --ifm-color-content: #E4F2E7;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.15);
+}
+
+/* ============================= */
+/* 2. Navbar & Footer             */
+/* ============================= */
+.navbar {
+  background-color: #387373;
+}
+
+.navbar__title,
+.navbar__item {
+  color: #E4F2E7;
+}
+
+.navbar__item:hover,
+.navbar__link--active {
+  color: #A3AB78;
+}
+
+.footer {
+  background-color: #387373;
+  color: #E4F2E7;
+}
+
+.footer a {
+  color: #A3AB78;
+}
+
+.footer a:hover {
+  color: #E4F2E7;
+}
+
+/* ============================= */
+/* 3. Typography                  */
+/* ============================= */
+body {
+  color: #E4F2E7;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #93BFB7;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* Inline code inside headings */
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+  background-color: transparent !important;
+  color: #BDE038 !important;
+  padding: 0 4px;
+  border-radius: 2px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+}
+
+a {
+  color: #A3AB78;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #E4F2E7;
+}
+
+/* ============================= */
+/* 4. Code blocks / syntax        */
+/* ============================= */
+/* Inline code (paragraphs and lists) */
+p code, li code {
+  background-color: #2D3E40;
+  color: #BDE038;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95em;
+}
+
+/* Inline code inside table cells */
+td code {
+  background-color: #2D3E40 !important;
+  color: #BDE038 !important;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95em;
+}
+
+/* Code blocks */
+pre, pre code {
+  background-color: #2D3E40;
+  color: #BDE038;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95em;
+  line-height: 1.4;
+  overflow-x: auto;
+}
+
+/* Prism syntax highlighting */
+.token {
+  color: #BDE038 !important;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #97A6A0 !important;
+  font-style: italic;
+}
+
+/* Highlighted line in code block */
+.docusaurus-highlighted-code-line {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ============================= */
+/* 5. Tables / blockquotes        */
+/* ============================= */
+table {
+  border: 0px solid transparent; /* No visible borders */
+  color: #E4F2E7;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 0px solid transparent;
+  padding: 10px 14px;
+}
+
+th {
+  background-color: #387373;
+  color: #E4F2E7;
+}
+
+td {
+  background-color: #2D3E40;
+  color: #E4F2E7;
+}
+
+/* Add subtle horizontal line for readability (optional) */
+tr:not(:last-child) td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #A3AB78;
+  padding-left: 1em;
+  color: #E4F2E7;
+  background-color: rgba(255, 255, 255, 0.05);
 }
