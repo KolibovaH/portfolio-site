@@ -78,4 +78,4 @@ Note the double backslashes (\\) which are required inside HTML attribute values
 - Make sure Dojo is fully loaded before running any code (`dojo/domReady!`)
 - Visit the [Dojo Toolkit documentation](https://dojotoolkit.org/documentation/) for reference
 
-[Back to Tutorial](./Tutorial)
+[Back to Tutorial](./Tutorial.md)
