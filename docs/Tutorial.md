@@ -209,4 +209,4 @@ Now if the user tries to submit the form with empty fields or an invalid email, 
 
 ### Need Help?
 
-Check the [Troubleshooting Guide](./Troubleshooting) for common errors and how to fix them.
+Check the [Troubleshooting Guide](./Troubleshooting.md) for common errors and how to fix them.
